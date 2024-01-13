@@ -1,6 +1,7 @@
 **Lab Report 1**
 
 **Command: cd**
+
 Example with no argument:
 The working directory was lecture 1 when this command was run.Since this was one of the first commands to be run in the terminal, the change directory command just defaulted to the home directory which contains the lecture1 folder as part of its list. When it has no argument, it by default resets to the first directory in the path this being home. This output is not an error and is rather a means to reset the directory in the terminal.
 
@@ -11,6 +12,7 @@ Example to a file:
 The working directory was home by running cd with no argument. When you run a command with a path to a file, it provides an error message because the cd command expects a directory as the argument so when you provide a file, it cannot change it to something that is not a directory. This is an error and comes from the language text files in messages. 
 
 **Command ls**
+
 Example with no argument:
 The terminal was clear so the working directory was home. When typing the command ls with no argument and just the command itself in the terminal, the output is going to be lecture1 because the command itself lists files and folders within the directory so in the home directory there is the file “lecture1” which is returned as a result. There is no output error as a result because the “ls” command gives the list for the working directory.
 
@@ -21,6 +23,7 @@ Example to a file:
 The working directory was the home directory. Typing the command “ls lecture1/messages/en-us.txt” as the argument (with the argument being a path to the file), it returns the argument. Since the ls command is intended to return a list, given that it seems intended for a directory, then a file and its contents won’t be read since it’s the file itself and it does not contain a list of files or folders so by default the command returns the argument given with “ls.” There is no evident error but it can be said that it is not a correct/effective use of the command since files don’t contain folders or subsets of other files, so therefore the terminal returns an output of the argument and doesn’t actually does its intended purpose/use.
 
 **Command cat**
+
 Example with no argument:
 The working directory was the home directory. Given this, and given the cat command that returns the contents of a file, when you put no argument and just type cat in as the command in the terminal, it just starts taking in whatever the user input is (when clicking enter) and returns it letter for letter. Presuming that the command just defaults to user input and returns text from the user input. This can be argued to be an error given that it doesn’t take commands anymore in the terminal and you kind of are stuck there, with the terminal just returning whatever is inputted.
 
