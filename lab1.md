@@ -3,8 +3,8 @@
 **Command: cd**
 
 Example with no argument:
-![Image](Web capture_12-1-2024_20489_docs.google.com.jpeg)
-The working directory was lecture 1 when this command was run.Since this was one of the first commands to be run in the terminal, the change directory command just defaulted to the home directory which contains the lecture1 folder as part of its list. When it has no argument, it by default resets to the first directory in the path this being home. This output is not an error and is rather a means to reset the directory in the terminal.
+![Image](Web capture_12-1-2024_20489_docs.google.com.jpeg)                       
+The working directory was lecture 1 when this command was run. Since this was one of the first commands to be run in the terminal, the change directory command just defaulted to the home directory which contains the lecture1 folder as part of its list. When it has no argument, it by default resets to the first directory in the path this being home. This output is not an error and is rather a means to reset the directory in the terminal.
 
 Example with a directory:
 ![Image](Web capture_12-1-2024_205020_docs.google.com.jpeg)
@@ -17,7 +17,7 @@ The working directory was home by running cd with no argument. When you run a co
 **Command ls**
 
 Example with no argument:
-![Image](Web capture_12-1-2024_205136_docs.google.com.jpeg)
+![Image](Web capture_12-1-2024_205136_docs.google.com.jpeg)                        
 The terminal was clear so the working directory was home. When typing the command ls with no argument and just the command itself in the terminal, the output is going to be lecture1 because the command itself lists files and folders within the directory so in the home directory there is the file “lecture1” which is returned as a result. There is no output error as a result because the “ls” command gives the list for the working directory.
 
 Example with a directory:
@@ -26,7 +26,7 @@ The working directory was the home directory. When typing the command “ls lect
 
 Example with a file:
 ![Image](Web capture_12-1-2024_20529_docs.google.com.jpeg)
-The working directory was the home directory. Typing the command “ls lecture1/messages/en-us.txt” as the argument (with the argument being a path to the file), it returns the argument. Since the ls command is intended to return a list, given that it seems intended for a directory, then a file and its contents won’t be read since it’s the file itself and it does not contain a list of files or folders so by default the command returns the argument given with “ls.” There is no evident error but it can be said that it is not a correct/effective use of the command since files don’t contain folders or subsets of other files, so therefore the terminal returns an output of the argument and doesn’t actually does its intended purpose/use.
+The working directory was the home directory. Typing the command “ls lecture1/messages/en-us.txt” as the argument (with the argument being a path to the file), returns the argument. Since the ls command is intended to return a list, given that it seems intended for a directory, then a file and its contents won’t be read since it’s the file itself and it does not contain a list of files or folders so by default the command returns the argument given with “ls.” There is no evident error but it can be said that it is not a correct/effective use of the command since files don’t contain folders or subsets of other files, therefore the terminal returns an output of the argument and doesn’t actually do its intended purpose/use.
 
 **Command cat**
 
@@ -40,4 +40,4 @@ The working directory was set to the home directory. Giving the command cat a di
 
 Example with a file:
 ![Image](Web capture_12-1-2024_205317_docs.google.com.jpeg)
-The working directory was the home directory. Since it is the home directory, we give a path to a file as an argument for the cat command so when “cat lecture1/messages/en-us.txt” is run in ther terminal, it gives an output of the contents of the file. This is what the command cat does as it prints out the contents of one or more files and so giving “en-us.txt” file as the argument has its contents printed out which is “Hello World!” There is no error at all since the command is run with the correct type of argument for it to work which in this case is a file. 
+The working directory was the home directory. Since it is the home directory, we give a path to a file as an argument for the cat command so when “cat lecture1/messages/en-us.txt” is run in the terminal, it gives an output of the contents of the file. This is what the command cat does as it prints out the contents of one or more files and so giving “en-us.txt” file as the argument has its contents printed out which is “Hello World!” There is no error at all since the command is run with the correct type of argument for it to work which in this case is a file. 
