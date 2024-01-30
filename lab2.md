@@ -14,23 +14,23 @@ _Relevant fields changed with the request_: Within the `handleRequest` method, t
 
 **Input 2**
 ![Image](screenshot2.jpeg)
-Methods called: Similar to the first input, the methods that are called on by the user input of `/add-message?s=This%20is%20a%20message&user=cat` are handleRequest and main method in which they check the input for its query and path to attain the message and user. This case would be a message of This is a message and a user of cat. The main method starts a server and creates the web server in which handleRequest gets its input.
+_Methods called_: Similar to the first input, the methods that are called on by the user input of `/add-message?s=This%20is%20a%20message&user=cat` are handleRequest and main method in which they check the input for its query and path to attain the message and user. This case would be a message of This is a message and a user of cat. The main method starts a server and creates the web server in which handleRequest gets its input.
 
-Relevant arguments & relevant fields: Similarly, relevant arguments are the user's input in the query and path of the web server (`/add-message?s=This%20is%20a%20message&user=cat`), which gives the code its argument to get a message and user using `url.getPath()` and `url.getQuery()` methods. Following this, using local variables of `parameters`, `message`, and `users` to find the message and user, in this case `This is a message` and `cat`, to store them and concatenate them as a string in the instance variable `ArrayList messages`. Following that, it then concatenates all the strings in `messages` in `String result` and returns `result` to display on the web server.
+_Relevant arguments & relevant fields_: Similarly, relevant arguments are the user's input in the query and path of the web server (`/add-message?s=This%20is%20a%20message&user=cat`), which gives the code its argument to get a message and user using `url.getPath()` and `url.getQuery()` methods. Following this, using local variables of `parameters`, `message`, and `users` to find the message and user, in this case `This is a message` and `cat`, to store them and concatenate them as a string in the instance variable `ArrayList messages`. Following that, it then concatenates all the strings in `messages` in `String result` and returns `result` to display on the web server.
 
-Relevant fields changed with the request: The _if-statements_ within the method `handleRequest` have local variables `parameters`, `message`, and `users` that change with each request and stores parts of the **query** to get the message and user from the input in the URL on the web server which is a field that is changed and in this instance is `/add-message?s=This%20is%20a%20message&user=cat`. Each time there is a request, `ArrayList messages` updates with the newly added concatenation of the string in the format `Name: Message` from the input. This affects `result` where the returned variable is a longer string. In this request, the `ArrayList message` contains `me: Hello`, `me: Hello`, `me: Hello`, `you: Hello`, `me: Hello`, and the new addition `cat: This+is+a+message` from the request. The screenshot displays `result`. 
+_Relevant fields changed with the request_: The _if-statements_ within the method `handleRequest` have local variables `parameters`, `message`, and `users` that change with each request and stores parts of the **query** to get the message and user from the input in the URL on the web server which is a field that is changed and in this instance is `/add-message?s=This%20is%20a%20message&user=cat`. Each time there is a request, `ArrayList messages` updates with the newly added concatenation of the string in the format `Name: Message` from the input. This affects `result` where the returned variable is a longer string. In this request, the `ArrayList message` contains `me: Hello`, `me: Hello`, `me: Hello`, `you: Hello`, `me: Hello`, and the new addition `cat: This+is+a+message` from the request. The screenshot displays `result`. 
 
 ### Part 2 - 
 ```ls command```
 ![Image](Web capture_29-1-2024_212725_edstem.org.jpeg)
+
 The first `command` shows the argument and command of `ls /home/.ssh/id_ed25519.pub` which contains the argument _public key_ for logging into `ieng6`.
 The second `command` shows the argument and command of `ls /home/.ssh/id_ed25519` which contains the argument _private key_ for logging into `ieng6`.
 
 logging in ```ieng6``` without password
 ![Image](Web capture_29-1-2024_211425_edstem.org.jpeg)
-Logging into `ieng6` account without needing a password.
 
 ### Part 3 - 
-Something that I didn't know before labs 2 and 3 was connecting to servers and that we can use URLs and URIs to encode and create a web server that can change based on the Path and Query input of the web server's URL. 
-This ties in with the notion of ports as well where I wasn't aware computers needed ports or how that connected with the notion of webservers. This came with new knowledge about commands like ```ssh``` ```scp``` ```mkdir```
+Something that I didn't know before labs 2 and 3 was connecting to servers and that we can use **URLs** and **URIs** to encode and create a web server that can change based on the **Path** and **Query** input of the web server's URL. 
+This ties in with the notion of _ports_ as well where I wasn't aware computers needed ports or how that connected with the notion of webservers. This came with new knowledge about commands like ```ssh``` ```scp``` ```mkdir```
 and more. These are very useful for setting up remote servers and setting up ```ssh keys```.
