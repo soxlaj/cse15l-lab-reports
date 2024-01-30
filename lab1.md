@@ -32,7 +32,7 @@ The working directory was the ```home``` directory. Typing the command ```ls lec
 
 Example with no argument:
 ![Image](Web capture_12-1-2024_205227_docs.google.com.jpeg)
-The working directory was the ```home``` directory. Given this, and given the ```cat``` command that returns the contents of a file, when you put no argument and just type ```cat``` in as the command in the terminal, it just starts taking in whatever the user input is (when clicking enter) and returns it letter for letter. Presuming that the command just defaults to user input and returns text from the user input. This is not an error error given that it does take commands from the terminal and from the user input the terminal just returns whatever is inputted, but is not an effective use of cat and is continuous returning of user input. 
+The working directory was the ```home``` directory. Given this, and given the ```cat``` command that returns the contents of a file, when you put no argument and just type ```cat``` in as the command in the terminal, it just starts taking in whatever the user input is (when clicking enter) and returns it letter for letter. Presuming that the command just defaults to user input and returns text from the user input. This is not an error given that it does take commands from the terminal and from the user input the terminal just returns whatever is inputted, but is not an effective use of cat and is a continuous return of user input, which is the ```cat``` commands intended purpose. 
 
 Example with a directory:
 ![Image](Web capture_12-1-2024_205258_docs.google.com.jpeg)
