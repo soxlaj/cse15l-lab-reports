@@ -89,7 +89,7 @@ Command:
 `find ./911report -type files`
 
 Output:
-`
+```
 ./911report/chapter-13.4.txt
 ./911report/chapter-13.5.txt
 ./911report/chapter-13.1.txt
@@ -107,7 +107,7 @@ Output:
 ./911report/chapter-12.txt
 ./911report/chapter-10.txt
 ./911report/chapter-11.txt
-`
+```
 This is very useful for accessing the files in a given directory, in this instance, the path `./911report` with the find command gives all the given types (`files`) and outputs the files within that director.
 This is again very useful to know and access files in a directory especially if you are only interested in files and not directories and being able to access them.
 
@@ -118,7 +118,7 @@ Command:
 `find ./biomed -name "*.txt"`
 
 Output:
-`
+```
 ./biomed/1472-6807-2-2.txt
 ./biomed/1471-2350-4-3.txt
 ./biomed/1471-2156-2-3.txt
@@ -133,7 +133,7 @@ Output:
 ./biomed/1471-213X-1-11.txt
 ./biomed/1472-684X-1-5.txt
 ./biomed/1476-4598-1-6.txt
-`
+```
 This is a very useful method when you want to look for a specific keyphrase or word in a given directory. This can be used to find key phrases or even files and can lists them all out such as the exmaple above where it found all .txt files in the biomed directory.
 
 _Example 2:_
@@ -141,9 +141,9 @@ Command:
 `find . -type d -name "Alcohol_Problems"`
 
 Output:
-`
+```
 ./government/Alcohol_Problems
-`
+```
 This also works for directories if you use the above method of `-type d` to search through directories that match the name of `Alcohol_Problems` and this is useful if you are looking for a path to a directory to access the files of that directory.
 Good to use as well to search through directories within directories and find the path to them if it is convuluted. 
 
@@ -176,7 +176,7 @@ Command:
 `find . -size -3k`
 
 Output:
-`
+```
 .
 ./government
 ./government/About_LSC
@@ -252,7 +252,7 @@ Output:
 ./plos/pmed.0020120.txt
 ./plos/pmed.0020281.txt
 ./911report
-`
+```
 This is useful in identifying what files are taking up how much space. In this instance, I used `find . - size` to find the files that are less than 3 kilobytes and resulted in all these files. In this instance, it is clear it can be used to find files within a given range and find small and large files within a directory.
 
 _Example 2:_
@@ -260,7 +260,8 @@ Command:
 `find . -size +9k -size -10k`
 
 Output:
-`./government/Gen_Account_Office/og97051.txt
+```
+./government/Gen_Account_Office/og97051.txt
 ./government/Gen_Account_Office/og97052.txt
 ./government/Gen_Account_Office/og96014.txt
 ./government/Gen_Account_Office/og96023.txt
@@ -279,5 +280,5 @@ Output:
 ./plos/journal.pbio.0020215.txt
 ./biomed/1472-6769-1-4.txt
 ./911report/preface.txt
-`
+```
 This command once again shows us the range of possibilities with searching for a file size where this one shows you can give a range for a size. In this instance, I gave a range of more than 9 kilobytes but less than 10 kilobytes for `find` to return the files in that range and it allows the user to know what files are in a size range and can show the capacity of the files. 
