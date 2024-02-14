@@ -5,7 +5,7 @@
 **Provide:**
 
 A failure-inducing input for the buggy program, as a JUnit test and any associated code.
-`
+```
 public class ArrayTests {
   @Test
   public void testReverseInPlace() {
@@ -14,9 +14,9 @@ public class ArrayTests {
     assertArrayEquals(new int[]{3, 2, 1}, input1);
   }
 }
-`
+```
 An input that doesn't induce a failure, as a JUnit test and any associated code.
-`
+```
 public class ArrayTests {
   @Test
   public void testReverseInPlace() {
@@ -25,7 +25,7 @@ public class ArrayTests {
     assertArrayEquals(new int[]{3, 2, 1}, input1);
   }
 }
-`
+```
 The symptom, as the output of running the tests
 **Failure:**
 ![Image](screenshotlab3-2.jpg)
@@ -35,16 +35,16 @@ The symptom, as the output of running the tests
 
 The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
 **Before:**
-`
+```
 static void reverseInPlace(int[] arr) {
   for(int i = 0; i < arr.length; i+=1){
     arr[i] = arr[arr.length - i - 1];
   }
 }
-`
+```
 
 **After:**
-`
+```
 static void reverseInPlace(int[] arr) {
   int[] copyArr = new int[arr.length];
   System.arraycopy(arr, 0, copyArr, 0, arr.length);
@@ -52,7 +52,7 @@ static void reverseInPlace(int[] arr) {
     arr[i] = copyArr[arr.length - i - 1];
   }
 }
-`
+```
 
 Briefly describe why the fix addresses the issue.
 This is the fix for the bug because initially the code only iterated through the array given as a parameter and started setting the beginning values of the array to the ending values and iterating till it reached the end where the ending values ended at the beginning of the array `arr[arr.length - i - 1]` which ensured that it would end at the start of the array and set values of the start to the end of the new reversed array. The issue lies in the fact this array changes the beginning values from the start so the original starting values are replaced and the reverseInPlace method only returns roughly half of the values in the original array and rest are copies and duplicates of these which isn’t a reversed array. To combat this, we make a copy of the given array in a new array called copyArray and then begin setting the beginning of arr to the backwards iteration of the copied array which successfully gives us the values of the original array in reverse order in the original array. Therefore, when given an array of {1, 2, 3} the JUnit tests pass because the expected output of the original array should be changed to {3, 2, 1} and it is so it passes.
