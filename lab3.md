@@ -28,10 +28,10 @@ public class ArrayTests {
 `
 The symptom, as the output of running the tests
 **Failure:**
-![Image](screenshotlab3-2.jpeg)
+![Image](screenshotlab3-2.jpg)
 
 **Success:**
-![Image](screenshotlab3-2.jpeg)
+![Image](screenshotlab3-2.jpg)
 
 The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
 **Before:**
