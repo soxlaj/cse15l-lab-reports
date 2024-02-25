@@ -19,7 +19,7 @@ An input that doesn't induce a failure, as a JUnit test and any associated code.
 ```
 public class ArrayTests {
   @Test
-  public void testReverseInPlace() {
+  public void testReverseInPlaceSuccess() {
     int[] input1 = {1, 2, 3};
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{3, 2, 1}, input1);
