@@ -28,7 +28,7 @@ public class ArrayTests {
 ```
 The symptom, as the output of running the tests
 **Failure:**
-![Image](screenshotlab3-2.jpg)
+![Image](screenshotlab3-1.jpg)
 
 **Success:**
 ![Image](screenshotlab3-2.jpg)
