@@ -23,8 +23,11 @@ We reaccessed `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 In this step, as evident in the screenshot above, we enter `vim` mode using the command `vim ListExamples.java` to enter into vim and fix the error in the code found within the java file `ListExamples`. The `vim` command allows us to access and edit files from the terminal and in this instance allows us to access and edit the file `ListExamples.java` that is cloned in the remote server and to fix the error. 
 Entering `vim` displays the output above, and in this we are in `normal mode` in which we use the arrow keys to navigate through the lines of code however we cannot make changes. To make a change, we need to enter `insert mode` where we can edit the characters in the file using keys and the set of keys we use to fix the error in the code are the following:
 `<down>(43 times)<e><right><backspace><2>`
-And this changes the character that caused the tests to fail, and to exit `insert mode` we use the keys:
+Note that `<e>` key goes to the end of a word and would go to the end of `index1` which is where we want to make a change, at `1` of the variable and replace it with `2`.
+
+This changes the character that caused the tests to fail, and to exit `insert mode` we use the key:
 `<esc>`
+
 Leaving `insert mode` and entering `normal mode` we can now save and quit vim using the keys:
 `<shift>+<;><w><q>`
 In which the key `w` saves the changes made in `vim` and `q` exits out of `normal mode` and `vim` thus saving the change to the `ListExamples.java` file.
