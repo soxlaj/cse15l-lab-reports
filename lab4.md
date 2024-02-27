@@ -21,7 +21,7 @@ We reaccessed `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 **Step 7**
 ![Step7](lab4screenshotstep7vim.jpeg)
 In this step, as evident in the screenshot above, we enter `vim` mode using the command `vim ListExamples.java` to enter into vim and fix the error in the code found within the java file `ListExamples`. The `vim` command allows us to access and edit files from the terminal and in this instance allows us to access and edit the file `ListExamples.java` that is cloned in the remote server and to fix the error. 
-Entering `vim` displays the output above, and in this we are in `normal mode` in which we use the arrow keys to navigate through the lines of code however we cannot make changes. To make a change, we need to use enter `insert mode` where we can edit the characters in the file using keys and the set of keys we use to fix the error in the code are the following:
+Entering `vim` displays the output above, and in this we are in `normal mode` in which we use the arrow keys to navigate through the lines of code however we cannot make changes. To make a change, we need to enter `insert mode` where we can edit the characters in the file using keys and the set of keys we use to fix the error in the code are the following:
 `<down>(43 times)<e><right><backspace><2>`
 And this changes the character that caused the tests to fail, and to exit `insert mode` we use the keys:
 `<esc>`
@@ -43,7 +43,7 @@ The output shows us that we successfully changed the error in the code in the fi
 ![Step9](lab4screenshotstep9-2.jpeg)
 
 In this step, we aim to commit and push the change to my GitHub account and the first two screenshots demonstrate the commands and output used to do so. 
-First, I used `git status` to check that the file `ListExamples.java` was changed and the red `modified` in the screenshot confirms there has been changes in the clone in the remote server. Then confirming this, I use the command `git add ListExamples.java` to add the change to the list of commits and so it is ready to be pushed to GitHub as a change to be committed to the repository. 
+First, I used `git status` to check that the file `ListExamples.java` was changed and the red `modified` in the screenshot confirms there have been changes in the clone in the remote server. Then confirming this, I use the command `git add ListExamples.java` to add the change to the list of commits and so it is ready to be pushed to GitHub as a change to be committed to the repository. 
 
 Second, I once again use `git status` to confirm this change is ready to be committed and see the green `modified` along with the words `Changes to be committed` in the second screenshot which confirms that we can now commit these changes. To do so and to push this commit, I used the command `git commit -m "fixed ListExamples.java"` and this commits the change done within the file `ListExamples.java` to the clone. This inherently is a local commit and will not be reflected on my GitHub account.
 
