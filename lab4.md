@@ -18,6 +18,7 @@ Summarize commands and explain what effect keypresses had
 ![Step7](lab4screenshotstep7vim.jpeg)
 
 **Step 8**
+
 ![Step8](lab4screenshotstep8.jpeg)
 
 **Step 9**
