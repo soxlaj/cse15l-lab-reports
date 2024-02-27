@@ -31,6 +31,7 @@ In which the key `w` saves the changes made in `vim` and `q` exits out of `norma
 **Step 8**
 
 ![Step8](lab4screenshotstep8.jpeg)
+
 Repeating from step 6, we rerun these tests using the up arrow keys to access the compile and run commands for the JUnit tests and end up with the output above from entering these commands:
 `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` and `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamples.java`
 The output shows us that we successfully changed the error in the code in the file `ListExamples.java` as the tests successfully passed.
@@ -42,7 +43,9 @@ The output shows us that we successfully changed the error in the code in the fi
 
 In this step, we aim to commit and push the change to my GitHub account and the first two screenshots demonstrate the commands and output used to do so. 
 First, I used `git status` to check that the file `ListExamples.java` was changed and the red `modified` in the screenshot confirms there has been changes in the clone in the remote server. Then confirming this, I use the command `git add ListExamples.java` to add the change to the list of commits and so it is ready to be pushed to GitHub as a change to be committed to the repository. 
+
 Second, I once again use `git status` to confirm this change is ready to be committed and see the green `modified` along with the words `Changes to be committed` in the second screenshot which confirms that we can now commit these changes. To do so and to push this commit, I used the command `git commit -m "fixed ListExamples.java"` and this commits the change done within the file `ListExamples.java` to the clone. This inherently is a local commit and will not be reflected on my GitHub account.
+
 To reflect it in my GitHub account we need to push it using the command `git push` which pushes all local commits to my GitHub account and so since I only did one commit, it pushed this one commit to my GitHub account in the forked repository with the message that `ListExamples.java` was fixed in the commit. 
 
 ![Step9](lab4screenshotstep9-3.jpeg)
