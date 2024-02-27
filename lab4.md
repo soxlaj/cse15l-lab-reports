@@ -9,6 +9,7 @@ Here I logged into ieng6 using `ssh soxlaj@ieng-202.ucsd.edu` command (not appar
 
 **Step 5**
 ![Step5](lab4screenshotstep5.jpeg)
+
 In this step, I cloned the `ssh` link of the fork of the repository of lab7 using `git clone <link>`. while in the ieng6 server and so this creates a clone on the remote server of the fork of the lab7 repository. Here, if you use `ls` we will see `lab7` as a file in the working directory, and for the next step we `cd` into `lab7` to work on this clone.
 
 **Step 6**
