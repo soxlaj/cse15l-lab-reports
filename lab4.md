@@ -5,7 +5,7 @@ Summarize commands and explain what effect keypresses had
 
 **Step 4**
 ![Step4](lab4screenshotstep4.jpeg)
-Here I logged into ieng6 using `ssh soxlaj@ieng-202.ucsd.edu` command (not apparent in the screenshot but was later used because of issues with default `ieng6-203`) and this command essentially allows me to log in remotely to a server.  
+Here I logged into ieng6 using `ssh soxlaj@ieng6-202.ucsd.edu` command (not apparent in the screenshot but was later used because of issues with default `ieng6-203`) and this command essentially allows me to log in remotely to a server.  
 
 **Step 5**
 ![Step5](lab4screenshotstep5.jpeg)
