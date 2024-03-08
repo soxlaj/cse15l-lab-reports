@@ -36,7 +36,7 @@ In which the key `w` saves the changes made in `vim` and `q` exits out of `norma
 
 **Step 8**
 
-![Step8](lab4screenshotstep8.jpeg)
+![Step8](screenshotlab4REDO.jpeg)
 
 Repeating from step 6, we rerun these tests using the up arrow keys to access the compile and run commands for the JUnit tests and end up with the output above from entering these commands:
 `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` and `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamples.java`
