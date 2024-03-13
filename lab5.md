@@ -25,7 +25,7 @@ Hi! Thank you so much for your feedback, I tried what you suggested and it seems
 **Setup**
 
 
-1) Edited `git clone lab7` in the remote server of `soxlaj@ieng6-202.ucsd.edu`
+1) Edited `git clone lab7` in the remote server of `soxlaj@ieng6-202.ucsd.edu` and directory was 
 `cd lab7`
 
 2) Screenshot of ListExamplesTests.java
