@@ -29,6 +29,7 @@ Hi! Thank you so much for your feedback, I tried what you suggested and it seems
 `cd lab7`
 
 2) Screenshot of ListExamplesTests.java
+![Step4](screenshotLab5pt1.jpeg)
 
 3) `bash test.sh`
 
